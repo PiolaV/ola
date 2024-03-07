@@ -42,6 +42,11 @@ body{
         width:50%;
         
     }
+    .col-lg-4{
+        width: 33.33%;
+        float:left
+    }
+    
    
 
 
