@@ -7,6 +7,7 @@
     <!-- bootstrap cdn -->
     <link 
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <div class="container-fluid">
@@ -26,16 +27,76 @@
 
             </div>
         </div>
+        <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-        <div class="row mt-3">
-            <div class="col-lg-12">
-                <!-- img banner -->
-                <img src="img/ctMserH8g2SeOAnCw5gFjdQF8mo.webp" alt="" 
-                class="img-fluid"/>
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/ctMserH8g2SeOAnCw5gFjdQF8mo.webp" alt="Los Angeles" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="img/ctMserH8g2SeOAnCw5gFjdQF8mo.webp" alt="Chicago" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="img/ctMserH8g2SeOAnCw5gFjdQF8mo.webp" alt="New York" class="d-block" style="width:100%">
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+      
+
+        </div>
+        
+        <h2 class="mp-3">UP coming</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="img/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg" alt=""
+                class ='img-fluid rounded'/>
             </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-6 p-2 col-sm-6">
+                        <img src="img/avatar.jpg" alt=""
+                        class="img-fluid rounded "/>
+                    </div>
+        
+                    <div class="col-lg-6 p-2 col-sm-6">
+                        <img src="img/2Wmmu1MkqxJ48J7aySET9EKEjXz.jpg" alt=""
+                        class="img-fluid rounded "/>
+                    </div>
+        
+        
+                    <div class="col-lg-6 p-2 col-sm-6">
+                        <img src="img/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg" alt=""
+                        class="img-fluid rounded "/>
+                    </div>
+        
+        
+                    <div class="col-lg-6 p-2 col-sm-6">
+                        <img src="img/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" alt=""
+                        class="img-fluid rounded "/>
+                    </div>
+                </div>           
+                         
         </div>
 
-        <h2> Now Playing</h2>
+        <h2 class="mp-3"> Now Playing</h2>
         <div class="row">
             <div class ="col-lg-2 col-sm-4 ">
                 <img src="img/1.webp" alt=""
