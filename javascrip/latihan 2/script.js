@@ -11,7 +11,7 @@ let npm = document.getElementById("npm");
 //tampilkan data localStorage ke dalam elemen <p id = 'npm'>
 npm.innerHTML = localStorage.getItem("npm")
 
-let npm = document.getElementById("nama");
+let nama = document.getElementById("nama");
 //tampilkan data localStorage ke dalam elemen <p id = 'nama'>
 nama.innerHTML = localStorage.getItem("nama")
 
@@ -37,8 +37,19 @@ let nilai =[
 // tampilkan namamk pemograman web 
 console.log(nilai [0].nama_mk);
 console.log(nilai [1].nama_mk);
+
 // simpan ke local storage
+
 localStorage.setItem("nilai",JSON.stringify(nilai));
 
 // tampilkan menggunakan for atau foreach 
-let lsNilai = localStorage.getItem("nilai");
+let lsNilai = JSON.parse(localStorage.getItem("nilai"));
+for (const [index, data] of lsNilai.entries()){
+    console.log(data.kode_mk);
+    console.log(data.nama_mk);
+    // tampilkan data mk ke dalam ul id list mk 
+    document.getElementById("listMk").innerHTML +=
+    `
+    <li>${data.kode_mk} ${data.nama_mk}</li>
+    `;
+}
